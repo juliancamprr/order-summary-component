@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Order summary card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+      .attribution {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        font-size: 11px;
+        text-align: center;
+        margin: 10px;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      * {
+        text-decoration: none;
+      }
+
+      body {
+        background-image: url(images/pattern-background-desktop.svg);
+      }
+
+      .container {
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+
+      .card {
+        background-color: white;
+        width: 450px;
+        height: 43em;
+        font-family: "Red Hat Display";
+        border-radius: 8px;
+      }
+
+      .card img {
+        border-radius: 8px 8px 0 0;
+      }
+
+      .text-info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+      }
+      .text-info h2 {
+        color: hsl(223, 47%, 23%);
+        margin-bottom: 0;
+      }
+
+      .text-info p {
+        width: 70%;
+        color: hsl(224, 23%, 55%)
+      }
+
+
+      .price-info {
+        margin: 3em 20px;
+        padding: 6px 6px;
+        background-color: hsl(225, 100%, 94%);
+        display: flex;
+        align-items: center;
+        border-radius: 8px;
+      }
+
+      .price-info h3 {
+        margin: 0;
+      }
+
+      .price-info p {
+        margin: 0;
+      }
+      
+      .product-price .price {
+        color: hsl(224, 23%, 55%);
+      }
+
+      .change-button {
+        margin: 0 35%;
+      }
+
+      .proceed-payment a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: hsl(245, 75%, 52%);
+        margin: 3em 20px;
+        border-radius: 7px;
+        padding: 15px;
+        color: white;
+      }
+
+      .cancel-payment h4 {
+        margin: -2em;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <img src="images/illustration-hero.svg" alt="" />
+        <div class="text-info">
+          <h2>Order Summary</h2>
+          <p>
+            You can now listen to millions of songs, audiobooks, and podcasts on
+            any device anywhere you like!
+          </p>
+        </div>
+        <div class="price-info">
+          <div class="music-icon">
+            <img src="images/icon-music.svg" alt="" />
+          </div>
+          <div class="product-price">
+            <h3>Annual Plan</h3>
+            <h3 class="price">$59.99/year</h3>
+          </div>
+          <div class="change-button">
+            <h4><a href="">Change</a></h4>
+          </div>
+        </div>
+        <div class="payment">
+          <div class="proceed-payment">
+            <h3><a href="">Proceed Payment</a></h3>
+          </div>
+          <div class="cancel-payment">
+            <h4><a href="">Cancel Order</a></h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Djulian C.</a>.
+    </div>
+  </body>
+</html>
